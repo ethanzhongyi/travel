@@ -1,21 +1,46 @@
 <template>
-  <div class='banner'>
-    <img class='banner-img' src='//img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_600x330_f922b488.jpg'></img>
-    <div class='banner-info'>
-      <div class='banner-title'>
-      故宫(AAAAA景区)
-      </div>
-      <div class='banner-num'>
-      <span class='iconfont banner-icon'>&#xe616;</span>
-      39
+  <div>
+    <div class='banner' @click='handleBannerClick'>
+      <img class='banner-img' src='//img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_600x330_f922b488.jpg'></img>
+      <div class='banner-info'>
+        <div class='banner-title'>
+        故宫(AAAAA景区)
+        </div>
+        <div class='banner-num'>
+        <span class='iconfont banner-icon'>&#xe616;</span>
+        39
+        </div>
       </div>
     </div>
+    <common-gallary 
+      :imgs='imgs'
+      v-show='showGallary'
+      @close='handleGallaryClick' 
+    ></common-gallary>
   </div>
 </template>
 
 <script>
+import CommonGallary from 'common/gallary/Gallary'
 export default {
-  name: 'Banner'
+  name: 'Banner',
+  data () {
+    return {
+      showGallary: false,
+      imgs: ['//img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_600x330_f922b488.jpg','http://img1.qunarzz.com/sight/p0/1410/34/f540a04367d06820af4dfeaf0ad40257.water.jpg_r_800x800_479f9b55.jpg']
+    }
+  },
+  methods: {
+    handleBannerClick () {
+      this.showGallary = true
+    },
+    handleGallaryClick () {
+      this.showGallary = false
+    }
+  },
+  components: {
+    CommonGallary
+  }
   }
 </script>
 
