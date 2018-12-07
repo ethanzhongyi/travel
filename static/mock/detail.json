@@ -1,0 +1,40 @@
+{
+	"ret": true,
+	"data": {
+		"sightName": "故宫(AAAAA景区)",
+		"bannerImg": "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_600x330_f922b488.jpg",
+		"gallaryImgs": ["http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_600x330_f922b488.jpg","http://img1.qunarzz.com/sight/p0/1410/34/f540a04367d06820af4dfeaf0ad40257.water.jpg_r_800x800_479f9b55.jpg"],
+		"categoryList": [{
+        "title": "成人票",
+        "children": [{
+          "title": "成人票111",
+          "children": [{
+            "title": "成人票00000"
+        }]
+        },{
+          "title": "成人票222"
+        }]
+      },{
+        "title": "学生票",
+        "children": [{
+          "title": "学生票3333"
+        },{
+          "title": "学生票4444"
+        }]
+      },{
+        "title": "儿童票",
+        "children": [{
+          "title": "儿童票555"
+        },{
+          "title": "儿童票666"
+        }]
+      },{
+        "title": "特价票",
+        "children": [{
+          "title": "特价票777"
+        },{
+          "title": "特价票888"
+        }]
+      }]
+	}
+}

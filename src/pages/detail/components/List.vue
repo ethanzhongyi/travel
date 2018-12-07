@@ -3,7 +3,7 @@
     <div
       class='item'
       v-for='(item, index) of list'
-      :ker='index'
+      :key='index'
     >
   	  <div class='item-title'>
   	    <span class='item-title-icon border-bottom'></span>
